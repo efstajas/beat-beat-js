@@ -6,7 +6,9 @@
 		"declaration": true,
 		"outDir": "lib",
 		"strict": true,
-		"strictNullChecks": false
+		"strictNullChecks": false,
+		"skipDefaultLibCheck": true,
+		"types": []
 	},
 	"include": ["src"],
 	"exclude": ["node_modules", "**/__tests__/*"]
