@@ -17,7 +17,7 @@ export default class BeatBeat {
 	) {}
 
 	load() {
-		return new Promise(async resolve => {
+		return new Promise<void>(async resolve => {
 			const resp = await fetch(this.name)
 			const file = await resp.arrayBuffer()
 			this.context.decodeAudioData(file, async (buffer) => {
